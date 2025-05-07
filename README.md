@@ -1,0 +1,1 @@
+Ovaj repozitorij sadrži materijale, kod i zadatke za predmet Tehnike programiranja na Elektrotehničkom fakultetu u Sarajevu. Cilj predmeta je upoznati studente s osnovnim principima programiranja, strukturiranim i objektno orijentisanim pristupima, kao i tehnikama optimizacije koda.
