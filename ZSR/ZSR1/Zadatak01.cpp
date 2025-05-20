@@ -9,7 +9,6 @@ Uputa: Jedan način rješavanja mogao bi biti sljedeći: pretvorite oba unesena 
 sekundi. Na primer, imamo 14h 15min 7s = 51307s i 16h 9min 34s = 58174s. Oduzmite broj
 sekundi da dobijete broj sekundi između ovih trenutaka (6867s u zadanom primjeru). Konačno,
 razložite dobijeni broj sekundi ponovo na sate, minute i sekunde (6867s = 1h 54min 27s) */
-
 #include <iostream>
 
 int main() {
