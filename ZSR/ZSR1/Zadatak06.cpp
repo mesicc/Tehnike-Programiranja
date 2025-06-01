@@ -20,5 +20,6 @@ int main() {
     }
     else
         std::cout << "Brojevi NE mogu biti stranice pravouglog trougla.\n";
+    
     return 0;
 }
