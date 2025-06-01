@@ -17,7 +17,7 @@ int main() {
     }
     
     // Provjeravamo sve neparne brojeve od 3 do sqrt(n)
-    for(int i = 3; i * i <= broj; i++) {
+    for(int i = 3; i * i <= broj; i = i + 2) {
         while (broj % i == 0) {
             std::cout << i << " ";
             broj /= i;
