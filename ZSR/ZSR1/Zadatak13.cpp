@@ -28,6 +28,5 @@ int main() {
         std::cout << "Aritmeticka sredina: " << aritmeticka << std::endl;
         std::cout << "Geometrijsak sredina: " << geometrijska << std::endl;
     }
-    
     return 0;
 }
