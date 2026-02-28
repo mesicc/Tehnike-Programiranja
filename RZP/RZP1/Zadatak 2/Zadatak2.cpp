@@ -16,17 +16,19 @@ int main() {
         double beta = std::acos((a * a + c * c - b * b) / (2 * a * c));
         double gama = std::acos((a * a + b * b - c * c) / (2 * a * b));
         double minugao;
+
         if(alfa < beta && alfa < gama) minugao = alfa;
         else if(beta < gama) minugao = beta;
         else minugao = gama;
+
         minugao *= 45 / std::atan(1);
         double minute = 60 * (minugao - int(minugao));
         double sekunde = 60 * (minute - int(minute));
         std::cout << "Obim trougla sa duzinama stranica " << a << ", " << b
-        << " i " << c << " iznosi " << 2 * s << ".\n"
-        << "Njegova povrsina iznosi " << p << ".\n"
-        << "Njegov najmanji ugao ima " << int(minugao) << " stepeni, "
-        << int(minute) << " minuta i " << int(sekunde) << " sekundi.\n";
-    };
+                  << " i " << c << " iznosi " << 2 * s << ".\n"
+                  << "Njegova povrsina iznosi " << p << ".\n"
+                  << "Njegov najmanji ugao ima " << int(minugao) << " stepeni, "
+                  << int(minute) << " minuta i " << int(sekunde) << " sekundi.\n";
+    }
     return 0;
 }
