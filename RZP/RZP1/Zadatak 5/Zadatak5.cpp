@@ -7,8 +7,8 @@ int main() {
     std::cin >> n;
     std::cout << "Unesite brojeve:" << std::endl;
     
-    int najmanji_dosad = std::numeric_limits<int>::max(), 
-        najveci_dosad = std::numeric_limits<int>::lowest();
+    int najmanji_dosad = std::numeric_limits<int>::max(), //bilo koji uneseni broj će biti manji od max()
+        najveci_dosad = std::numeric_limits<int>::lowest(); //bilo koji uneseni broj će biti veći od lowest()
 
     std::cout << "Unesite brojeve: " << std::endl;
     for(int i = 1; i <= n; i++) {
