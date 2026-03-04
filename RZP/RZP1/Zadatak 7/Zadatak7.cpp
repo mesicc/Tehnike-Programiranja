@@ -6,13 +6,16 @@ int main() {
 	std::cout << "Unesite visinu: ";
 	std::cin >> visina;
 
-	std::cout << std::setw(visina) << "*" << std::endl;
-
-	for(int red = 2; red < visina; red++) 
-		std::cout << std::setw(visina - red + 1) << "*"
- 				   << std::setw(2 * red - 2) << "*" << std::endl;
- 	
-	std::cout << std::setfill('*') << std::setw(2 * visina - 1) << "" << std::endl;
+	for(int red = 1; red <= visina; red++) {
+		for(int i = 1; i <= visina - red; i++) std::cout << " ";
+		if(red != 1) {
+			std::cout << "*";
+			for(int i = 1; i <= 2 * red - 3; i++)
+				if(red == visina) std::cout << "*";
+				else std::cout << " ";
+		}
+		std::cout << "*\n";
+ 	}
 	
 	return 0;
 }
