@@ -1,23 +1,18 @@
 #include <iostream>
+#include <iomanip>
 
 int main() {
 	int visina;
 	std::cout << "Unesite visinu: ";
 	std::cin >> visina;
 
-	for(int i = 1; i < visina; i++) std::cout << " ";
-	std::cout << "*\n";
+	std::cout << std::setw(visina) << "*" << std::endl;
 
-
-	for(int red = 2; red < visina; red++) {
-		for(int i = 1; i <= visina - red; i++) std::cout << " ";
-		std::cout << "*";
-		for(int i = 1; i <= 2 * red - 3; i++) std::cout << " ";
-		std::cout << "*\n";
-	}
-
-	for(int i = 1; i < 2 * visina; i++) std::cout << "*";
- 	std::cout << std::endl;
+	for(int red = 2; red < visina; red++) 
+		std::cout << std::setw(visina - red + 1) << "*"
+ 				   << std::setw(2 * red - 2) << "*" << std::endl;
+ 	
+	std::cout << std::setfill('*') << std::setw(2 * visina - 1) << "" << std::endl;
 	
 	return 0;
 }
