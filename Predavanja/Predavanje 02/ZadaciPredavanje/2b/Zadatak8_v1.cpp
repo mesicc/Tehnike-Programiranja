@@ -27,9 +27,10 @@ int main() {
     std::cout << "\nNovi vektor je: ";
     v = {1, 2, 3, 4, 5};
     for(int x : v) std::cout << x << " ";
-    /* “v.front()” odnosno “v.back()” sinonimi za “v[0]” odnosno “v[v.size() - 1]” */
     std::cout << "\nPrvi element vektora: " << v.front();
     std::cout << "\nZadnji element vektora: " << v.back();
+    
+    std::cout << "\nPokazivac na prvi element vektora je: " << v.data(); //sinonim za “&v[0]”
 
     return 0;
 }
